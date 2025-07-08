@@ -1,5 +1,5 @@
 const asyncHandler = require("express-async-handler");
-const ApiError = require("../utils/apiError");
+const ApiError = require("../utils/APIError");
 
 const User = require("../models/userSchema");
 const Product = require("../models/productSchema");
