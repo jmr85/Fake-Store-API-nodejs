@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+logs/
+
+# Build output
+dist/
+build/
+
+# Coverage
+coverage/
+
+# Cache
+.cache/
+.npm
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+
+# Uploads
+uploads/
+
+# SSL certificates
+*.pem
+*.key
