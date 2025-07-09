@@ -82,7 +82,7 @@ exports.requireLogIn = async (req, res, next) => {
 
 // @desc Make sure the user is logged in the same own url
 exports.isAuth = (req, res, next) => {
-  let user =
+  const user =
     req.Profile &&
     req.crUser &&
     JSON.stringify(req.Profile) === JSON.stringify(req.crUser);
