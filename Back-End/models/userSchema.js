@@ -52,8 +52,15 @@ const userSchema = new mongoose.Schema(
       },
     ],
   },
-  { timestamps: true }
+  { timestamps: true, versionKey: false }
 );
+
+userSchema.set('toJSON', {
+  transform: function(doc, returnedObject) {
+    delete returnedObject.__v;
+    return returnedObject;
+  }
+});
 
 // Hash Password Before Send to Database
 userSchema.pre("save", async function (next) {

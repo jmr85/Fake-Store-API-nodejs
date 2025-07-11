@@ -29,8 +29,15 @@ const cartSchema = new mongoose.Schema(
       ref: "User",
     },
   },
-  { timestamps: true }
+  { timestamps: true, versionKey: false }
 );
+
+cartSchema.set('toJSON', {
+  transform: function(doc, returnedObject) {
+    delete returnedObject.__v;
+    return returnedObject;
+  }
+});
 
 // Create model
 const BrandModel = mongoose.model("Cart", cartSchema);

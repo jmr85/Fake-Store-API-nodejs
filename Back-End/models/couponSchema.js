@@ -19,8 +19,15 @@ const couponSchema = new mongoose.Schema(
       required: [true, "Coupon discount value required"],
     },
   },
-  { timestamps: true }
+  { timestamps: true, versionKey: false }
 );
+
+couponSchema.set('toJSON', {
+  transform: function(doc, returnedObject) {
+    delete returnedObject.__v;
+    return returnedObject;
+  }
+});
 
 // Create model
 const couponModel = mongoose.model("Coupon", couponSchema);

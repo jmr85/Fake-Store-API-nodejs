@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 require("dotenv").config();
 // Create Schema
 const categorySchema = new mongoose.Schema(
@@ -17,8 +18,15 @@ const categorySchema = new mongoose.Schema(
     },
     image: String,
   },
-  { timestamps: true }
+  { timestamps: true, versionKey: false }
 );
+
+categorySchema.set('toJSON', {
+  transform: function(doc, returnedObject) {
+    delete returnedObject.__v;
+    return returnedObject;
+  }
+});
 
 const setImageUrl = (doc) => {
   if (doc.image) {

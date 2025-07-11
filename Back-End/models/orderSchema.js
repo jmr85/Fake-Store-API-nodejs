@@ -54,8 +54,15 @@ const orderSchema = new mongoose.Schema(
     },
     deliveredAt: Date,
   },
-  { timestamps: true }
+  { timestamps: true, versionKey: false }
 );
+
+orderSchema.set('toJSON', {
+  transform: function(doc, returnedObject) {
+    delete returnedObject.__v;
+    return returnedObject;
+  }
+});
 
 // Create model
 const orderModel = mongoose.model("Order", orderSchema);

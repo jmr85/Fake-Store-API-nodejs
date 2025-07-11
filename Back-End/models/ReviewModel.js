@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const { ObjectId } = mongoose.Schema;
 const Product = require("./productSchema");
 
@@ -24,8 +25,15 @@ const reviewSchema = new mongoose.Schema(
       required: [true, "Review must belong to product"],
     },
   },
-  { timestamps: true }
+  { timestamps: true, versionKey: false }
 );
+
+reviewSchema.set('toJSON', {
+  transform: function(doc, returnedObject) {
+    delete returnedObject.__v;
+    return returnedObject;
+  }
+});
 
 reviewSchema.pre(/^find/, function (next) {
   this.populate({ path: "user", select: "name" });

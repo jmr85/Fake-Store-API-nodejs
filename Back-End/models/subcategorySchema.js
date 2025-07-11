@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const { ObjectId } = mongoose.Schema;
 
 // Create Schema
@@ -22,8 +23,15 @@ const subcategorySchema = new mongoose.Schema(
       require: true,
     },
   },
-  { timestamps: true }
+  { timestamps: true, versionKey: false }
 );
+
+subcategorySchema.set('toJSON', {
+  transform: function(doc, returnedObject) {
+    delete returnedObject.__v;
+    return returnedObject;
+  }
+});
 
 // Create model
 const subcategoryModel = mongoose.model("SubCategory", subcategorySchema);

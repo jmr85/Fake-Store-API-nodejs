@@ -13,8 +13,15 @@ const brandSchema = new mongoose.Schema(
     },
     image: String,
   },
-  { timestamps: true }
+  { timestamps: true, versionKey: false }
 );
+
+brandSchema.set('toJSON', {
+  transform: function(doc, returnedObject) {
+    delete returnedObject.__v;
+    return returnedObject;
+  }
+});
 
 const setImageUrl = (doc) => {
   console.log(doc.image);

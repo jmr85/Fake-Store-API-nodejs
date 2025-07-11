@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const { ObjectId } = mongoose.Schema;
 // Create Schema
 const productSchema = new mongoose.Schema(
@@ -68,8 +69,15 @@ const productSchema = new mongoose.Schema(
       default: 0,
     },
   },
-  { timestamps: true }
+  { timestamps: true, versionKey: false }
 );
+
+productSchema.set('toJSON', {
+  transform: function(doc, returnedObject) {
+    delete returnedObject.__v;
+    return returnedObject;
+  }
+});
 
 productSchema.virtual("reviews", {
   ref: "Review",
