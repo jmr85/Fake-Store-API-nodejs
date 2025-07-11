@@ -24,11 +24,28 @@ exports.createCashOrder = asyncHandler(async (req, res, next) => {
   }
 
   // 2) Get order price depend on cart price "Check if coupon apply"
-  const cartPrice = cart.totalPriceAfterDiscount
-    ? cart.totalPriceAfterDiscount
-    : cart.totalCartPrice;
+  // const cartPrice = cart.totalPriceAfterDiscount
+  //   ? cart.totalPriceAfterDiscount
+  //   : cart.totalCartPrice;
 
-  const totalOrderPrice = cartPrice + taxPrice + shippingPrice;
+  // const totalOrderPrice = cartPrice + taxPrice + shippingPrice;
+
+  let cartPrice = (cart.totalPriceAfterDiscount !== undefined && cart.totalPriceAfterDiscount !== null)
+  ? cart.totalPriceAfterDiscount
+  : cart.totalCartPrice;
+
+  if (!cartPrice || Number.isNaN(cartPrice)) {
+    cartPrice = Array.isArray(cart.cartItems)
+      ? cart.cartItems.reduce((acc, item) => acc + (Number(item.price) * Number(item.quantity)), 0)
+      : 0;
+  }
+  const totalOrderPrice = Number(cartPrice) + Number(taxPrice) + Number(shippingPrice);
+
+
+  console.log('cart.totalPriceAfterDiscount:', cart.totalPriceAfterDiscount);
+  console.log('cart.totalCartPrice:', cart.totalCartPrice);
+  console.log('cart.cartItems:', cart.cartItems);
+
 
   // 3) Create order with default paymentMethodType cash
 
