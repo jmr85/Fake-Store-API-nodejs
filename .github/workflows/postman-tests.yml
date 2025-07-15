@@ -23,8 +23,8 @@ jobs:
 
       - name: Run Newman tests
         run: |
-          newman run "Fake_Store_API.postman_collection.json" \
-            --environment "PROD_FakeStoreAPI_JMR.postman_environment.json" \
+          newman run "Store_API.postman_collection.json" \
+            --environment "PROD_StoreAPI_JMR.postman_environment.json" \
             --folder 'Order Creation E2E' \
             --reporters cli,html \
             --reporter-html-export newman-report.html
