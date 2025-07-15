@@ -1,6 +1,6 @@
-# My Ecommerce Software Requirements
+# Ecommerce Software Requirements
 
-fakeStoreApi is an online REST API that you can use whenever you need Pseudo-real data for your e-commerce or shopping website without running any server-side code.
+Store Api Node is an online fake REST API that you can use whenever you need Pseudo-real data for your shopping or e-commerce website without running any server-side code and also for doing API Testing with Postman, RestAssured, etc.
 
 ## The features in the API :
 
@@ -135,7 +135,7 @@ To run this project, you will need to add the following environment variables to
 `MONGO_URI`
 `JWT_SECRET`
 
-##### BASE_URL = `https://yofakestoreapi.onrender.com`
+##### BASE_URL = `https://store-api-node-bklk.onrender.com`
 
 ## API Authentication
 
@@ -287,7 +287,7 @@ User Routes:
 You can access the list of users by using the `/api/users` endpoint.
 
 ```
-[GET] https://yofakestoreapi.onrender.com/api/users
+[GET] https://store-api-node-bklk.onrender.com/api/users
 ```
 
 ```json
@@ -313,7 +313,7 @@ You can access the list of users by using the `/api/users` endpoint.
 You can get a single user by adding the `id` as a parameter: `/api/users/{userId}`
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/users/63bc7cb13e721990a8cc4ff5
+[GET] https://store-api-node-bklk.onrender.com/api/users/63bc7cb13e721990a8cc4ff5
 ```
 
 ```json
@@ -339,7 +339,7 @@ You can get a single user by adding the `id` as a parameter: `/api/users/{userId
 You can create a new user by sending an object like the following to `/api/users/`
 
 ```bash
-[POST] https://yofakestoreapi.onrender.com/api/users/
+[POST] https://store-api-node-bklk.onrender.com/api/users/
 ```
 
 ```json
@@ -382,7 +382,7 @@ You can create a new user by sending an object like the following to `/api/users
 You can update a user exists by sending an object like the following and adding the `id` as a parameter: `/api/users/{userId}`
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/users/63bc81973e721990a8cc501f
+[PUT] https://store-api-node-bklk.onrender.com/api/users/63bc81973e721990a8cc501f
 ```
 
 ```json
@@ -423,7 +423,7 @@ You can update a user exists by sending an object like the following and adding 
 You can delete a user exists by adding the `id` as a parameter: `/api/users/{userId}`
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/users/63bc81973e721990a8cc501f
+[DELETE] https://store-api-node-bklk.onrender.com/api/users/63bc81973e721990a8cc501f
 ```
 
 ```json
@@ -437,7 +437,7 @@ You can change password of any user exists by sending an object like the followi
 <!--  changeMyPassword/{userId -->
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/users/changePassword/63bc802d3e721990a8cc5005
+[PUT] https://store-api-node-bklk.onrender.com/api/users/changePassword/63bc802d3e721990a8cc5005
 ```
 
 ```json
@@ -503,7 +503,7 @@ You can change password of any user exists by sending an object like the followi
 ## Get Logged User
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/users/getMe
+[GET] https://store-api-node-bklk.onrender.com/api/users/getMe
 ```
 
 ```json
@@ -529,7 +529,7 @@ You can change password of any user exists by sending an object like the followi
 You can update logged user by sending an object like the following
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/users/updateMe
+[PUT] https://store-api-node-bklk.onrender.com/api/users/updateMe
 ```
 
 ```json
@@ -542,13 +542,13 @@ You can update logged user by sending an object like the following
 ## Deactivate Logged Users
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/users/deleteMe
+[DELETE] https://store-api-node-bklk.onrender.com/api/users/deleteMe
 ```
 
 ## Activate Logged Users
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/users/activeMe
+[PUT] https://store-api-node-bklk.onrender.com/api/users/activeMe
 ```
 
 ## Authentication
@@ -569,7 +569,7 @@ Auth Routes:
 You can do login by sending an object like the following to `/auth/login/`
 
 ```bash
-[POST] https://yofakestoreapi.onrender.com/api/auth/login
+[POST] https://store-api-node-bklk.onrender.com/api/auth/login
 ```
 
 ```json
@@ -607,7 +607,7 @@ You can do login by sending an object like the following to `/auth/login/`
 Create a user by sending user's credentials (in JSON format) in the Body of the HTTP Request. The content of the Body should look like the following:
 
 ```bash
-[POST] https://yofakestoreapi.onrender.com/api/auth/signup
+[POST] https://store-api-node-bklk.onrender.com/api/auth/signup
 ```
 
 ```json
@@ -667,13 +667,13 @@ Category Routes:
 You can create a new category by sending an object like the following to `/categories/`
 
 ```bash
-[POST] https://yofakestoreapi.onrender.com/api/categories/
+[POST] https://store-api-node-bklk.onrender.com/api/categories/
 ```
 
 ```json
 {
   "name": "Dog Food",
-  "image": "https://yofakestoreapi.onrender.com//categories/category-bc9c91b0-0602-4679-a90a-ec2d35dcc895-1673300203174.jpeg"
+  "image": "https://store-api-node-bklk.onrender.com//categories/category-bc9c91b0-0602-4679-a90a-ec2d35dcc895-1673300203174.jpeg"
 }
 ```
 
@@ -685,7 +685,7 @@ You can create a new category by sending an object like the following to `/categ
     "data": {
         "name": "Dog Food",
         "slug": "dog-food",
-        "image": "https://yofakestoreapi.onrender.com//categories/category-bc9c91b0-0602-4679-a90a-ec2d35dcc895-1673300203174.jpeg",
+        "image": "https://store-api-node-bklk.onrender.com//categories/category-bc9c91b0-0602-4679-a90a-ec2d35dcc895-1673300203174.jpeg",
         "_id": "63bc88ec3e721990a8cc5064",
         "createdAt": "2023-01-09T21:36:44.017Z",
         "updatedAt": "2023-01-09T21:36:44.017Z",
@@ -701,7 +701,7 @@ You can create a new category by sending an object like the following to `/categ
 You can update a category exists by sending an object like the following and adding the id as a parameter: `/categories/{categoryId}`
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/categories/63bc88ec3e721990a8cc5064
+[PUT] https://store-api-node-bklk.onrender.com/api/categories/63bc88ec3e721990a8cc5064
 ```
 
 ```json
@@ -717,7 +717,7 @@ You can update a category exists by sending an object like the following and add
 You can delete a category exists by adding the `id`as a parameter: `/api/users/{id}`
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/categories/{categoryId}
+[DELETE] https://store-api-node-bklk.onrender.com/api/categories/{categoryId}
 ```
 
 ```json
@@ -729,7 +729,7 @@ status : 204 No Content
 You can get a single category by adding the `id` as a parameter: `/categories/{categoryId}`
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/categories/63bc88ec3e721990a8cc5064
+[GET] https://store-api-node-bklk.onrender.com/api/categories/63bc88ec3e721990a8cc5064
 ```
 
 ```json
@@ -738,7 +738,7 @@ You can get a single category by adding the `id` as a parameter: `/categories/{c
     "_id": "63bc88ec3e721990a8cc5064",
     "name": "Dog Food",
     "slug": "dog-food",
-    "image": "https://yofakestoreapi.onrender.com//categories/category-bc9c91b0-0602-4679-a90a-ec2d35dcc895-1673300203174.jpeg",
+    "image": "https://store-api-node-bklk.onrender.com//categories/category-bc9c91b0-0602-4679-a90a-ec2d35dcc895-1673300203174.jpeg",
     "createdAt": "2023-01-09T21:36:44.017Z",
     "updatedAt": "2023-01-09T21:36:44.017Z",
     "__v": 0
@@ -751,7 +751,7 @@ You can get a single category by adding the `id` as a parameter: `/categories/{c
 You can access the list of categories by using the `/categories` endpoint.
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/categories/
+[GET] https://store-api-node-bklk.onrender.com/api/categories/
 ```
 
 ```json
@@ -761,7 +761,7 @@ You can access the list of categories by using the `/categories` endpoint.
       "_id": "63bc88ec3e721990a8cc5064",
       "name": "Dog Food",
       "slug": "dog-food",
-      "image": "https://yofakestoreapi.onrender.com//categories/category-bc9c91b0-0602-4679-a90a-ec2d35dcc895-1673300203174.jpeg",
+      "image": "https://store-api-node-bklk.onrender.com//categories/category-bc9c91b0-0602-4679-a90a-ec2d35dcc895-1673300203174.jpeg",
       "createdAt": "2023-01-09T21:36:44.017Z",
       "updatedAt": "2023-01-09T21:36:44.017Z"
     }
@@ -775,7 +775,7 @@ You can access the list of categories by using the `/categories` endpoint.
 You can access the list of products by using the `/categories/{categoryId}/products` endpoint.
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/categories/{categoryId}/products
+[GET] https://store-api-node-bklk.onrender.com/api/categories/{categoryId}/products
 ```
 
 ```json
@@ -840,7 +840,7 @@ Sub-Category Routes:
 You can create a new subcategory by sending an object like the following to `/subcategories/`
 
 ```bash
-[POST] https://yofakestoreapi.onrender.com/api/categories/
+[POST] https://store-api-node-bklk.onrender.com/api/categories/
 ```
 
 ```json
@@ -855,7 +855,7 @@ You can create a new subcategory by sending an object like the following to `/su
 You can update a Sub-category exists by sending an object like the following and adding the id as a parameter: `/subcategories/{id}`
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/subcategories/{subCategoryId}
+[PUT] https://store-api-node-bklk.onrender.com/api/subcategories/{subCategoryId}
 ```
 
 ```json
@@ -872,7 +872,7 @@ You can update a Sub-category exists by sending an object like the following and
 You can delete a subcategory exists by adding the `id`as a parameter: `/api/subcategories/{id}`
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/subcategories/{categoryId}
+[DELETE] https://store-api-node-bklk.onrender.com/api/subcategories/{categoryId}
 ```
 
 ```json
@@ -884,7 +884,7 @@ status : 204 No Content
 You can access the list of subcategories by using the `/subcategories` endpoint.
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/subcategories/
+[GET] https://store-api-node-bklk.onrender.com/api/subcategories/
 ```
 
 ```json
@@ -909,7 +909,7 @@ You can access the list of subcategories by using the `/subcategories` endpoint.
 You can get a single subcategory by adding the `id` as a parameter: `/subcategories/{id}`
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/categories/${id}
+[GET] https://store-api-node-bklk.onrender.com/api/categories/${id}
 ```
 
 ```json
@@ -929,7 +929,7 @@ You can get a single subcategory by adding the `id` as a parameter: `/subcategor
 You can get All Subcategories for Specific Category by adding the `categoryId` as a parameter: `categories/${categoryId}/subcategories`
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/categories/${categoryId}/subcategories
+[GET] https://store-api-node-bklk.onrender.com/api/categories/${categoryId}/subcategories
 ```
 
 ```json
@@ -953,7 +953,7 @@ You can get All Subcategories for Specific Category by adding the `categoryId` a
 You can create a new subcategory by sending an object like the following to `/categories/${categoryId}/subcategories/`
 
 ```bash
-[POST] https://yofakestoreapi.onrender.com/api/categories/${categoryId}/subcategories/
+[POST] https://store-api-node-bklk.onrender.com/api/categories/${categoryId}/subcategories/
 ```
 
 ```json
@@ -993,7 +993,7 @@ Brand Routes:
 You can create a new brand by sending an object like the following to `/brands/`
 
 ```bash
-[POST] https://yofakestoreapi.onrender.com/api/brands/
+[POST] https://store-api-node-bklk.onrender.com/api/brands/
 ```
 
 ```json
@@ -1008,7 +1008,7 @@ You can create a new brand by sending an object like the following to `/brands/`
 You can update a brand exists by sending an object like the following and adding the `id` as a parameter: `/brands/{id}`
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/subcategories/{brandId}
+[PUT] https://store-api-node-bklk.onrender.com/api/subcategories/{brandId}
 ```
 
 ```json
@@ -1024,7 +1024,7 @@ You can update a brand exists by sending an object like the following and adding
 You can delete brand exists by adding the `id`as a parameter: `/api/brands/{id}`
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/brands/{brandId}
+[DELETE] https://store-api-node-bklk.onrender.com/api/brands/{brandId}
 ```
 
 ```json
@@ -1036,7 +1036,7 @@ status : 204 No Content
 You can access the list of brands by using the `/brands` endpoint.
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/brands/
+[GET] https://store-api-node-bklk.onrender.com/api/brands/
 ```
 
 ```json
@@ -1061,7 +1061,7 @@ You can access the list of brands by using the `/brands` endpoint.
 You can get a single brand by adding the `id` as a parameter: `/brands/{id}`
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/categories/${id}
+[GET] https://store-api-node-bklk.onrender.com/api/categories/${id}
 ```
 
 ```json
@@ -1111,7 +1111,7 @@ Product Routes:
 You can create a new product by sending an object like the following to `/api/products/` endpoint.
 
 ```
-[GET] https://yofakestoreapi.onrender.com/api/products
+[GET] https://store-api-node-bklk.onrender.com/api/products
 ```
 
 ```json
@@ -1125,12 +1125,12 @@ You can create a new product by sending an object like the following to `/api/pr
     "price": 27.78,
     "priceAfterDiscount": 16.99,
     "colors": [],
-    "imageCover": "https://yofakestoreapi.onrender.com//products/product-f720ed78-f7ae-4b97-984e-724fd649b526-1673301241065-cover.jpeg",
+    "imageCover": "https://store-api-node-bklk.onrender.com//products/product-f720ed78-f7ae-4b97-984e-724fd649b526-1673301241065-cover.jpeg",
     "images": [
-      "https://yofakestoreapi.onrender.com//products/product-75dda5a2-05c8-4ece-9e93-56cd68629d9b-1673301243414-3.jpeg",
-      "https://yofakestoreapi.onrender.com//products/product-6265568d-907a-4c00-a8da-3461ffd0f9d9-1673301243413-1.jpeg",
-      "https://yofakestoreapi.onrender.com//products/product-c1abe725-affd-4db1-b223-fe3a397f8551-1673301243414-2.jpeg",
-      "https://yofakestoreapi.onrender.com//products/product-5a1e1cc9-37ad-438f-ab25-fec0ecf2596d-1673301243415-4.jpeg"
+      "https://store-api-node-bklk.onrender.com//products/product-75dda5a2-05c8-4ece-9e93-56cd68629d9b-1673301243414-3.jpeg",
+      "https://store-api-node-bklk.onrender.com//products/product-6265568d-907a-4c00-a8da-3461ffd0f9d9-1673301243413-1.jpeg",
+      "https://store-api-node-bklk.onrender.com//products/product-c1abe725-affd-4db1-b223-fe3a397f8551-1673301243414-2.jpeg",
+      "https://store-api-node-bklk.onrender.com//products/product-5a1e1cc9-37ad-438f-ab25-fec0ecf2596d-1673301243415-4.jpeg"
     ],
     "category": "63bc88ec3e721990a8cc5064",
     "subcategories": [],
@@ -1149,7 +1149,7 @@ You can create a new product by sending an object like the following to `/api/pr
 you can update a product exists by sending an object like the following and adding the `id` as a parameter: `/api/products/{id}`
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/products/63bc8d063e721990a8cc5085
+[PUT] https://store-api-node-bklk.onrender.com/api/products/63bc8d063e721990a8cc5085
 ```
 
 ```json
@@ -1166,7 +1166,7 @@ you can update a product exists by sending an object like the following and addi
 You can delete a product exists by adding the `id` as a parameter: `/api/products/{id}`
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/products/63bc8e693e721990a8cc508d
+[DELETE] https://store-api-node-bklk.onrender.com/api/products/63bc8e693e721990a8cc508d
 ```
 
 ```json
@@ -1178,7 +1178,7 @@ status : 204 No Content
 You can get a single product by adding the `id` as a parameter: `/api/products/{id}`
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/products/63bc8e4b3e721990a8cc5089
+[GET] https://store-api-node-bklk.onrender.com/api/products/63bc8e4b3e721990a8cc5089
 ```
 
 ```json
@@ -1193,12 +1193,12 @@ You can get a single product by adding the `id` as a parameter: `/api/products/{
     "price": 26.83,
     "priceAfterDiscount": 25.49,
     "colors": [],
-    "imageCover": "https://yofakestoreapi.onrender.com//products/product-843c9047-6b04-41ef-8006-c649a9717976-1673301569183-cover.jpeg",
+    "imageCover": "https://store-api-node-bklk.onrender.com//products/product-843c9047-6b04-41ef-8006-c649a9717976-1673301569183-cover.jpeg",
     "images": [
-      "https://yofakestoreapi.onrender.com//products/product-0cfe07c8-2f7e-460c-9ce0-3f405e6fea95-1673301571031-4.jpeg",
-      "https://yofakestoreapi.onrender.com//products/product-86670577-2138-4e16-b405-0b4757a67293-1673301571030-1.jpeg",
-      "https://yofakestoreapi.onrender.com//products/product-0d83e714-47b7-4b01-8126-8d9be261f7fe-1673301571031-3.jpeg",
-      "https://yofakestoreapi.onrender.com//products/product-998a7b86-fb60-4299-a5ca-895906919a58-1673301571030-2.jpeg"
+      "https://store-api-node-bklk.onrender.com//products/product-0cfe07c8-2f7e-460c-9ce0-3f405e6fea95-1673301571031-4.jpeg",
+      "https://store-api-node-bklk.onrender.com//products/product-86670577-2138-4e16-b405-0b4757a67293-1673301571030-1.jpeg",
+      "https://store-api-node-bklk.onrender.com//products/product-0d83e714-47b7-4b01-8126-8d9be261f7fe-1673301571031-3.jpeg",
+      "https://store-api-node-bklk.onrender.com//products/product-998a7b86-fb60-4299-a5ca-895906919a58-1673301571030-2.jpeg"
     ],
     "category": {
       "name": "Dog Food"
@@ -1219,7 +1219,7 @@ You can get a single product by adding the `id` as a parameter: `/api/products/{
 You can access the list of 200 products by using the `/api/products` endpoint.
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/products
+[GET] https://store-api-node-bklk.onrender.com/api/products
 ```
 
 ```json
@@ -1241,12 +1241,12 @@ You can access the list of 200 products by using the `/api/products` endpoint.
       "price": 27.78,
       "priceAfterDiscount": 16.99,
       "colors": [],
-      "imageCover": "https://yofakestoreapi.onrender.com//products/product-f720ed78-f7ae-4b97-984e-724fd649b526-1673301241065-cover.jpeg",
+      "imageCover": "https://store-api-node-bklk.onrender.com//products/product-f720ed78-f7ae-4b97-984e-724fd649b526-1673301241065-cover.jpeg",
       "images": [
-        "https://yofakestoreapi.onrender.com//products/product-75dda5a2-05c8-4ece-9e93-56cd68629d9b-1673301243414-3.jpeg",
-        "https://yofakestoreapi.onrender.com//products/product-6265568d-907a-4c00-a8da-3461ffd0f9d9-1673301243413-1.jpeg",
-        "https://yofakestoreapi.onrender.com//products/product-c1abe725-affd-4db1-b223-fe3a397f8551-1673301243414-2.jpeg",
-        "https://yofakestoreapi.onrender.com//products/product-5a1e1cc9-37ad-438f-ab25-fec0ecf2596d-1673301243415-4.jpeg"
+        "https://store-api-node-bklk.onrender.com//products/product-75dda5a2-05c8-4ece-9e93-56cd68629d9b-1673301243414-3.jpeg",
+        "https://store-api-node-bklk.onrender.com//products/product-6265568d-907a-4c00-a8da-3461ffd0f9d9-1673301243413-1.jpeg",
+        "https://store-api-node-bklk.onrender.com//products/product-c1abe725-affd-4db1-b223-fe3a397f8551-1673301243414-2.jpeg",
+        "https://store-api-node-bklk.onrender.com//products/product-5a1e1cc9-37ad-438f-ab25-fec0ecf2596d-1673301243415-4.jpeg"
       ],
       "category": {
         "name": "Dog Food"
@@ -1267,7 +1267,7 @@ You can access the list of 200 products by using the `/api/products` endpoint.
 You can get related product by adding the `/api/products/related/{id}` endpoint.
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/products/related/{productId}
+[GET] https://store-api-node-bklk.onrender.com/api/products/related/{productId}
 ```
 
 ```json
@@ -1302,7 +1302,7 @@ You can get related product by adding the `/api/products/related/{id}` endpoint.
 You can search for a product by price by sending an object like the following
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/products/search
+[GET] https://store-api-node-bklk.onrender.com/api/products/search
 ```
 
 ```json
@@ -1318,7 +1318,7 @@ You can search for a product by price by sending an object like the following
 To Search by title or description the API needs to be called with the `keyword` set word that you want
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/products/?keyword=Flavors
+[GET] https://store-api-node-bklk.onrender.com/api/products/?keyword=Flavors
 ```
 
 ```json
@@ -1340,12 +1340,12 @@ To Search by title or description the API needs to be called with the `keyword` 
       "price": 26.83,
       "priceAfterDiscount": 25.49,
       "colors": [],
-      "imageCover": "https://yofakestoreapi.onrender.com//products/product-843c9047-6b04-41ef-8006-c649a9717976-1673301569183-cover.jpeg",
+      "imageCover": "https://store-api-node-bklk.onrender.com//products/product-843c9047-6b04-41ef-8006-c649a9717976-1673301569183-cover.jpeg",
       "images": [
-        "https://yofakestoreapi.onrender.com//products/product-0cfe07c8-2f7e-460c-9ce0-3f405e6fea95-1673301571031-4.jpeg",
-        "https://yofakestoreapi.onrender.com//products/product-86670577-2138-4e16-b405-0b4757a67293-1673301571030-1.jpeg",
-        "https://yofakestoreapi.onrender.com//products/product-0d83e714-47b7-4b01-8126-8d9be261f7fe-1673301571031-3.jpeg",
-        "https://yofakestoreapi.onrender.com//products/product-998a7b86-fb60-4299-a5ca-895906919a58-1673301571030-2.jpeg"
+        "https://store-api-node-bklk.onrender.com//products/product-0cfe07c8-2f7e-460c-9ce0-3f405e6fea95-1673301571031-4.jpeg",
+        "https://store-api-node-bklk.onrender.com//products/product-86670577-2138-4e16-b405-0b4757a67293-1673301571030-1.jpeg",
+        "https://store-api-node-bklk.onrender.com//products/product-0d83e714-47b7-4b01-8126-8d9be261f7fe-1673301571031-3.jpeg",
+        "https://store-api-node-bklk.onrender.com//products/product-998a7b86-fb60-4299-a5ca-895906919a58-1673301571030-2.jpeg"
       ],
       "category": {
         "name": "Dog Food"
@@ -1366,7 +1366,7 @@ To Search by title or description the API needs to be called with the `keyword` 
 To Filter results the API needs to be called with the `ratingsAverage[gte]` set number that you want
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/products/?ratingsAverage[gte]=1.6
+[GET] https://store-api-node-bklk.onrender.com/api/products/?ratingsAverage[gte]=1.6
 ```
 
 ```json
@@ -1403,7 +1403,7 @@ To Filter results the API needs to be called with the `ratingsAverage[gte]` set 
 To Field Limiting the API needs to be called with the `fields` set attribute that you want to display
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/products/?fields=title,price
+[GET] https://store-api-node-bklk.onrender.com/api/products/?fields=title,price
 ```
 
 ```json
@@ -1475,7 +1475,7 @@ Review Routes:
 You can create a new review by sending an object like the following to `/api/reviews/` endpoint.
 
 ```
-[GET] https://yofakestoreapi.onrender.com/api/reviews
+[GET] https://store-api-node-bklk.onrender.com/api/reviews
 ```
 
 ```json
@@ -1491,7 +1491,7 @@ You can create a new review by sending an object like the following to `/api/rev
 you can update review exists by sending an object like the following and adding the `id` as a parameter: `/api/reviews/{id}`
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/reviews/{reviewId}
+[PUT] https://store-api-node-bklk.onrender.com/api/reviews/{reviewId}
 ```
 
 ```json
@@ -1508,7 +1508,7 @@ you can update review exists by sending an object like the following and adding 
 You can delete specific review by adding the `id` as a parameter: `/api/reviews/{id}`
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/reviews/{reviewId}
+[DELETE] https://store-api-node-bklk.onrender.com/api/reviews/{reviewId}
 ```
 
 ```json
@@ -1520,7 +1520,7 @@ status : 204 No Content
 You can get specific review by adding the `id` as a parameter: `/api/reviews/{id}`
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/reviews/{reviewId}
+[GET] https://store-api-node-bklk.onrender.com/api/reviews/{reviewId}
 ```
 
 ```json
@@ -1545,7 +1545,7 @@ You can get specific review by adding the `id` as a parameter: `/api/reviews/{id
 You can access the list of reviews by using the `/api/reviews` endpoint.
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/reviews
+[GET] https://store-api-node-bklk.onrender.com/api/reviews
 ```
 
 ```json
@@ -1575,7 +1575,7 @@ You can access the list of reviews by using the `/api/reviews` endpoint.
 You can access the list of reviews on specifique products by using the `/api/{productId}/reviews` endpoint.
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/{productId}/reviews
+[GET] https://store-api-node-bklk.onrender.com/api/{productId}/reviews
 ```
 
 ```json
@@ -1632,7 +1632,7 @@ Wishlist Routes:
 You can add Product To Wishlist by sending an object like the following to `/api/wishlist/` endpoint.
 
 ```
-[POST] https://yofakestoreapi.onrender.com/api/wishlist
+[POST] https://store-api-node-bklk.onrender.com/api/wishlist
 ```
 
 ```json
@@ -1646,7 +1646,7 @@ You can add Product To Wishlist by sending an object like the following to `/api
 You can Remove Product From Wishlist by adding the `id` as a parameter: `/api/wishlist/{id}`
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/wishlist/{productId}
+[DELETE] https://store-api-node-bklk.onrender.com/api/wishlist/{productId}
 ```
 
 ```json
@@ -1662,7 +1662,7 @@ You can Remove Product From Wishlist by adding the `id` as a parameter: `/api/wi
 You can access the list of User Wishlist by using the `/api/wishlist` endpoint.
 
 ```
-[GET] https://yofakestoreapi.onrender.com/api/wishlist
+[GET] https://store-api-node-bklk.onrender.com/api/wishlist
 ```
 
 ```json
@@ -1722,7 +1722,7 @@ Addresses Routes:
 You can Add address to user addresses list by sending an object like the following to `/api/addressess/` endpoint.
 
 ```
-[POST] https://yofakestoreapi.onrender.com/api/addressess
+[POST] https://store-api-node-bklk.onrender.com/api/addressess
 ```
 
 ```json
@@ -1740,7 +1740,7 @@ You can Add address to user addresses list by sending an object like the followi
 You can Remove address from user addresses list by adding the `id` as a parameter: `/api/addressess/{id}`
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/addressess/{addressId}
+[DELETE] https://store-api-node-bklk.onrender.com/api/addressess/{addressId}
 ```
 
 ```json
@@ -1766,7 +1766,7 @@ You can Remove address from user addresses list by adding the `id` as a paramete
 You can access the list of addresses by using the `/api/addressess` endpoint.
 
 ```
-[GET] https://yofakestoreapi.onrender.com/api/addressess
+[GET] https://store-api-node-bklk.onrender.com/api/addressess
 ```
 
 ```json
@@ -1810,7 +1810,7 @@ Coupon Routes:
 You can Create Coupon by sending an object like the following to `/coupons/`
 
 ```bash
-[POST] https://yofakestoreapi.onrender.com/api/coupons/
+[POST] https://store-api-node-bklk.onrender.com/api/coupons/
 ```
 
 ```json
@@ -1826,7 +1826,7 @@ You can Create Coupon by sending an object like the following to `/coupons/`
 You can Update specific coupon by sending an object like the following and adding the `id` as a parameter: `/coupons/{id}`
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/coupons/{couponId}
+[PUT] https://store-api-node-bklk.onrender.com/api/coupons/{couponId}
 ```
 
 ```json
@@ -1842,7 +1842,7 @@ You can Update specific coupon by sending an object like the following and addin
 You can Delete specific coupon by adding the `id`as a parameter: `/api/coupons/{id}`
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/coupons/{couponId}
+[DELETE] https://store-api-node-bklk.onrender.com/api/coupons/{couponId}
 ```
 
 ```json
@@ -1854,7 +1854,7 @@ status : 204 No Content
 You can access the list of coupons by using the `/api/coupons` endpoint.
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/coupons
+[GET] https://store-api-node-bklk.onrender.com/api/coupons
 ```
 
 ```json
@@ -1880,7 +1880,7 @@ You can access the list of coupons by using the `/api/coupons` endpoint.
 You can get specific coupon by adding the `id` as a parameter: `/api/coupons/{id}`
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/coupons/{couponId}
+[GET] https://store-api-node-bklk.onrender.com/api/coupons/{couponId}
 ```
 
 ```json
@@ -1929,7 +1929,7 @@ Cart Routes:
 You can Add product to cart by sending an object like the following to `/cart/`
 
 ```bash
-[POST] https://yofakestoreapi.onrender.com/api/cart/
+[POST] https://store-api-node-bklk.onrender.com/api/cart/
 ```
 
 ```json
@@ -1942,7 +1942,7 @@ You can Add product to cart by sending an object like the following to `/cart/`
 ## Get logged user cart
 
 ```bash
-[GET] https://yofakestoreapi.onrender.com/api/cart
+[GET] https://store-api-node-bklk.onrender.com/api/cart
 ```
 
 ```json
@@ -1974,7 +1974,7 @@ You can Add product to cart by sending an object like the following to `/cart/`
 You can Update specific coupon by sending an object like the following and adding the `id` as a parameter: `/cart/{id}`
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/cart/{itemId}
+[PUT] https://store-api-node-bklk.onrender.com/api/cart/{itemId}
 ```
 
 ```json
@@ -1988,13 +1988,13 @@ You can Update specific coupon by sending an object like the following and addin
 You can remove Specific Cart Item by adding the `id`as a parameter: `/api/cart/{id}`
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/cart/{itemId}
+[DELETE] https://store-api-node-bklk.onrender.com/api/cart/{itemId}
 ```
 
 ## Clear logged user cart
 
 ```bash
-[DELETE] https://yofakestoreapi.onrender.com/api/cart/
+[DELETE] https://store-api-node-bklk.onrender.com/api/cart/
 ```
 
 ## Apply Coupon On Shopping Cart
@@ -2002,7 +2002,7 @@ You can remove Specific Cart Item by adding the `id`as a parameter: `/api/cart/{
 You can Apply Coupon On Shopping Cart by sending an object like the following
 
 ```bash
-[PUT] https://yofakestoreapi.onrender.com/api/cart/applyCoupon
+[PUT] https://store-api-node-bklk.onrender.com/api/cart/applyCoupon
 ```
 
 ```json
