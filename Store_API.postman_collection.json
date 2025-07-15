@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "7eb84766-1a01-4442-96d8-a65e432b0a88",
-		"name": "Fake Store API",
+		"name": "Store API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "10054885",
 		"_collection_link": "https://www.postman.com/juanmartinruiz/workspace/fake-store-api/collection/10054885-7eb84766-1a01-4442-96d8-a65e432b0a88?action=share&source=collection_link&creator=10054885"
