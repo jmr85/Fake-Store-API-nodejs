@@ -3,7 +3,8 @@
 		"_postman_id": "7eb84766-1a01-4442-96d8-a65e432b0a88",
 		"name": "Fake Store API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "10054885"
+		"_exporter_id": "10054885",
+		"_collection_link": "https://www.postman.com/juanmartinruiz/workspace/fake-store-api/collection/10054885-7eb84766-1a01-4442-96d8-a65e432b0a88?action=share&source=collection_link&creator=10054885"
 	},
 	"item": [
 		{
@@ -81,7 +82,7 @@
 									"    pm.expect(user.createdAt, \"createdAt debe ser string\").to.be.a(\"string\");\r",
 									"    pm.expect(user.updatedAt, \"updatedAt debe ser string\").to.be.a(\"string\");\r",
 									"\r",
-									"    // Fechas en formato ISO (opcional, solo si querés ser estricto)\r",
+									"    // Fechas en formato ISO \r",
 									"    pm.expect(new Date(user.createdAt).toISOString(), \"createdAt debe ser fecha ISO\").to.eql(user.createdAt);\r",
 									"    pm.expect(new Date(user.updatedAt).toISOString(), \"updatedAt debe ser fecha ISO\").to.eql(user.updatedAt);\r",
 									"});"
@@ -3395,16 +3396,16 @@
 									"    pm.expect(user.createdAt, \"createdAt debe ser string\").to.be.a(\"string\");\r",
 									"    pm.expect(user.updatedAt, \"updatedAt debe ser string\").to.be.a(\"string\");\r",
 									"\r",
-									"    // Fechas en formato ISO (opcional, solo si querés ser estricto)\r",
+									"    // Fechas en formato ISO\r",
 									"    pm.expect(new Date(user.createdAt).toISOString(), \"createdAt debe ser fecha ISO\").to.eql(user.createdAt);\r",
 									"    pm.expect(new Date(user.updatedAt).toISOString(), \"updatedAt debe ser fecha ISO\").to.eql(user.updatedAt);\r",
 									"});\r",
 									"\r",
-									"const body = JSON.parse(request.data); // Así obtienes los datos usados en el body\r",
+									"const body = JSON.parse(request.data);\r",
 									"pm.environment.set(\"new_user_email\", body.email);\r",
 									"pm.environment.set(\"new_user_password\", body.password);\r",
 									"\r",
-									"// Guarda el user_id retornado en la respuesta (ajustar si la respuesta tiene otra estructura)\r",
+									"// Guarda el user_id retornado en la respuesta\r",
 									"pm.environment.set(\"user_id\", pm.response.json().data._id);\r",
 									""
 								],
